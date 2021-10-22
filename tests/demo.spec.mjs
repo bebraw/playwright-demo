@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test('basic test', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-  const title = page.locator('.navbar__inner .navbar__title');
-  await expect(title).toHaveText('Playwright');
+test('expect to find a log in button', async ({ page }) => {
+  await page.goto('http://localhost:3009/');
+  const title = page.locator('text=Log In');
+  await expect(title).toBeVisible();
 });
