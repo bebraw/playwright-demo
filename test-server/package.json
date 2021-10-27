@@ -15,6 +15,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "e2e": "cd e2e && jest",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test"
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "customize-cra": "^1.0.0",
+    "playwright": "^1.16.1",
     "react-app-rewired": "^2.1.8",
     "threads-plugin": "^1.4.0"
   }
